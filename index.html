@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Carrito</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="container">
+        <div class="row">
+          <div class="four columns">
+            <img src="img/movilsource.png" width="100px" id="logo" />
+          </div>
+          <div class="two columns u-pull-right">
+            <ul>
+              <li class="submenu">
+                <img src="img/cart.jpeg" width="80" id="img-carrito" />
+                <div id="carrito">
+                  <table id="lista-carrito" class="u-full-width">
+                    <thead>
+                      <tr>
+                        <th>Imagen</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Accion</th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                  </table>
+
+                  <a href="#" id="vaciar-carrito" class="button u-full-width"
+                    >Vaciar Carrito</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="hero">
+      <div class="container">
+        <div class="row">
+          <div class="six columns">
+            <div class="contenido-hero">
+              <h2>Accesorios Movilsource</h2>
+              <p>Cables desde $30 pesos</p>
+              <form action="#" id="busqueda" method="post" class="formulario">
+                <input
+                  class="u-full-width"
+                  type="text"
+                  placeholder="Buscar acccesorio"
+                  id="buscador"
+                />
+                <input
+                  type="submit"
+                  id="submit-buscador"
+                  class="submit-buscador"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="barra">
+      <div class="container">
+        <div class="row">
+          <div class="four columns icono icono1">
+            <p>Accesorios de excelente calidad<br /></p>
+          </div>
+          <div class="four columns icono icono2">
+            <p>Envio a toda la republica<br /></p>
+          </div>
+          <div class="four columns icono icono3">
+            <p>Precios accesibles <br /></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="lista-cursos" class="container">
+      <h1 id="encabezado" class="encabezado">Accesorios para tu Movil</h1>
+      <div class="row">
+        <div class="four columns">
+          <div class="card">
+            <img src="img/1.jpg" class="imagen-curso u-full-width" />
+            <div class="info-card">
+              <h4>Cable c a lighning</h4>
+              <p>1m</p>
+
+              <p class="precio">$200 <span class="u-pull-right">$100</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="1"
+                >Agregar Al Carrito</a
+              >
+              <progress
+                hidden
+                id="progress"
+                max="100"
+                class="animacion"
+                value="0"
+                role="progressbar"
+              ></progress>
+              <p hidden id="progressText">Agregado</p>
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img src="img/2.jpg" class="imagen-curso u-full-width" />
+            <div class="info-card">
+              <h4>Turbo cargador iphone</h4>
+              <p>20w</p>
+
+              <p class="precio">$200 <span class="u-pull-right">$250</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="2"
+                >Agregar Al Carrito</a
+              >
+              <progress
+                hidden
+                id="progress"
+                max="100"
+                class="animacion"
+                value="0"
+                role="progressbar"
+              ></progress>
+              <p hidden id="progressText">Agregado</p>
+            </div>
+          </div>
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img src="img/3.webp" class="imagen-curso u-full-width" />
+            <div class="info-card">
+              <h4>Cubo entrada c</h4>
+              <p>20w</p>
+
+              <p class="precio">$200 <span class="u-pull-right">$150</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="3"
+                >Agregar Al Carrito</a
+              >
+              <progress
+                hidden
+                id="progress"
+                max="100"
+                class="animacion"
+                value="0"
+                role="progressbar"
+              ></progress>
+              <p hidden id="progressText">Agregado</p>
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+      </div>
+      <!--.row-->
+      <div class="row">
+        <div class="four columns">
+          <div class="card">
+            <img src="img/4.jpg" class="imagen-curso u-full-width" />
+            <div class="info-card">
+              <h4>Cable c a lighning</h4>
+              <p>1m</p>
+
+              <p class="precio">$200 <span class="u-pull-right">$80</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="4"
+                >Agregar Al Carrito</a
+              >
+              <progress
+                hidden
+                id="progress"
+                max="100"
+                class="animacion"
+                value="0"
+                role="progressbar"
+              ></progress>
+              <p hidden id="progressText">Agregado</p>
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img src="img/5.webp" class="imagen-curso u-full-width" />
+            <div class="info-card">
+              <h4>Power adapter</h4>
+              <p>20w</p>
+
+              <p class="precio">$200 <span class="u-pull-right">$150</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="5"
+                >Agregar Al Carrito</a
+              >
+              <progress
+                hidden
+                id="progress"
+                max="100"
+                class="animacion"
+                value="0"
+                role="progressbar"
+              ></progress>
+              <p hidden id="progressText">Agregado</p>
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img src="img/6.webp" class="imagen-curso u-full-width" />
+            <div class="info-card">
+              <h4>cubo entrada usb</h4>
+              <p>5w</p>
+
+              <p class="precio">$200 <span class="u-pull-right">$100</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="6"
+                >Agregar Al Carrito</a
+              >
+              <progress
+                hidden
+                id="progress"
+                max="100"
+                class="animacion"
+                value="0"
+                role="progressbar"
+              ></progress>
+              <p hidden id="progressText">Agregado</p>
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+      </div>
+      <!--.row-->
+      <div class="row">
+        <div class="four columns">
+          <div class="card">
+            <img src="img/7.webp" class="imagen-curso u-full-width" />
+            <div class="info-card">
+              <h4>Cable v8</h4>
+              <p>Hora</p>
+
+              <p class="precio">$200 <span class="u-pull-right">$80</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="7"
+                >Agregar Al Carrito</a
+              >
+              <progress
+                hidden
+                id="progress"
+                max="100"
+                class="animacion"
+                value="0"
+                role="progressbar"
+              ></progress>
+              <p hidden id="progressText">Agregado</p>
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img src="img/8.jpg" class="imagen-curso u-full-width" />
+            <div class="info-card">
+              <h4>Cable usb a lighning</h4>
+              <p>2m</p>
+
+              <p class="precio">$200 <span class="u-pull-right">$100</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="8"
+                >Agregar Al Carrito</a
+              >
+              <progress
+                hidden
+                id="progress"
+                max="100"
+                class="animacion"
+                value="0"
+                role="progressbar"
+              ></progress>
+              <p hidden id="progressText">Agregado</p>
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img src="img/9.jpg" class="imagen-curso u-full-width" />
+            <div class="info-card">
+              <h4>Cargador completo</h4>
+              <p>Hora</p>
+
+              <p class="precio">$200 <span class="u-pull-right">$250</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="9"
+                >Agregar Al Carrito</a
+              >
+              <progress
+                hidden
+                id="progress"
+                max="100"
+                class="animacion"
+                value="0"
+                role="progressbar"
+              ></progress>
+              <p hidden id="progressText">Agregado</p>
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+      </div>
+      <!--.row-->
+      <div class="row">
+        <div class="four columns">
+          <div class="card">
+            <img src="img/10.jpg" class="imagen-curso u-full-width" />
+            <div class="info-card">
+              <h4>Cable usb a lighning</h4>
+              <p>1m</p>
+
+              <p class="precio">$200 <span class="u-pull-right">$80</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="10"
+                >Agregar Al Carrito</a
+              >
+              <progress
+                hidden
+                id="progress"
+                max="100"
+                class="animacion"
+                value="0"
+                role="progressbar"
+              ></progress>
+              <p hidden id="progressText">Agregado</p>
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img src="img/11.jpg" class="imagen-curso u-full-width" />
+            <div class="info-card">
+              <h4>Batery pack</h4>
+              <p></p>
+
+              <p class="precio">$600 <span class="u-pull-right">$400</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="11"
+                >Agregar Al Carrito</a
+              >
+              <progress
+                hidden
+                id="progress"
+                max="100"
+                class="animacion"
+                value="0"
+                role="progressbar"
+              ></progress>
+              <p hidden id="progressText">Agregado</p>
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+        <div class="four columns">
+          <div class="card">
+            <img src="img/12.jpg" class="imagen-curso u-full-width" />
+            <div class="info-card">
+              <h4>Cargador completo</h4>
+              <p>Hora</p>
+              <p class="precio">$200 <span class="u-pull-right">$100</span></p>
+              <a
+                href="#"
+                class="u-full-width button-primary button input agregar-carrito"
+                data-id="12"
+                >Agregar Al Carrito</a
+              >
+              <progress
+                hidden
+                id="progress"
+                max="100"
+                class="animacion"
+                value="0"
+                role="progressbar"
+              ></progress>
+              <p hidden id="progressText">Agregado</p>
+            </div>
+          </div>
+          <!--.card-->
+        </div>
+      </div>
+      <!--.row-->
+    </div>
+
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="four columns">
+            <nav id="principal" class="menu">
+              <a class="enlace" href="#">tu Negocio</a>
+              <a class="enlace" href="#">ubicacion</a>
+            </nav>
+          </div>
+          <div class="four columns">
+            <nav id="secundaria" class="menu">
+              <a class="enlace" href="#">¿Quienes Somos?</a>
+              <a class="enlace" href="#">Empleo</a>
+              <a class="enlace" href="#">Blog</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
